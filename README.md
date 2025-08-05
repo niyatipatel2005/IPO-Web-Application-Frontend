@@ -1,7 +1,20 @@
 # IPO-Web-Application-Frontend
 
+---
+
+## Description 
+
 A modern IPO information website that showcases various Initial Public Offerings (IPOs) with detailed pages, stats, and company insights. Designed with clean UI/UX using HTML, CSS, and Bootstrap 5.
 
+
+### 🔍 Key Features
+- Detailed IPO pages for companies like Inox India, IREDA, Tata Tech, and more
+- Key financial data, issue size, price band, lot size, and subscription info
+- Highlighted sections like Top Gainers and Top Losers
+- Fully responsive layout with consistent design
+- Styled cards, alert boxes, and financial tables
+
+  
 -----
 
 ## 📁 Project Structure
