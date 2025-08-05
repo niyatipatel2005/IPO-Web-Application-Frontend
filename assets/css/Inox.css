@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.content {
+  flex: 2;
+}
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.meta {
+  font-size: 13px;
+  color: #666;
+  margin: 10px 0 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.image-box {
+  background: #e6fff2;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+.image-box img {
+  width: 100px;
+  height: auto;
+}
+
+.image-caption {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4e5bf2;
+  margin-top: 10px;
+}
+
+.dots {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.filled {
+  background-color: #888;
+}
+
+.intro {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.banner {
+  height: 100px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  display: block;
+  height: 10px;
+  background-color: #4e5bf2;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.widget {
+  background-color: #f1f1f1;
+  height: 120px;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+.description {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.summary-intro {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+
+
+.ipo-extra-details {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 30px;
+}
+
+.ipo-extra-details .nested-bullets li {
+  font-weight: normal !important;
+}
+
+
+.custom-bullets {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.custom-bullets li {
+  font-weight: bold;
+}
+
+.nested-bullets {
+  list-style-type: disc;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+.nested-bullets li {
+  font-weight: normal;
+}
+
+
+.ipo-table {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.ipo-table .row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.ipo-table .row:last-child {
+  border-bottom: none;
+}
+
+.ipo-table .label {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 12px;
+  font-weight: 600;
+  border-right: 1px solid #ccc;
+}
+
+.ipo-table .value {
+  flex: 2;
+  padding: 12px;
+  background-color: #fff;
+}
+
+
+.financial-table-wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.financial-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.financial-table th,
+.financial-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.financial-table thead th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+.financial-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+
+/* Stack Top Gainers and Losers vertically */
+.stock-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.stock-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+
+.stock-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.arrow-icon {
+  background-color: #e6fff2;
+  padding: 6px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transform: rotate(-45deg);
+}
+
+.stock-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stock-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.stock-list li:last-child {
+  border-bottom: none;
+}
+
+.stock-list li span {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+}
+
+.stock-list li div {
+  text-align: right;
+}
+
+.stock-list strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.change.green {
+  color: #008000;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.change.red {
+  color: #cc0000;
+  font-size: 13px;
+  font-weight: 500;
+}
